@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image
 
-imagem = Image.open("image 1.jpg").convert("RGB")
+imagem = Image.open("imagens/floresta.jpg").convert("RGB")
 
 imagem_array = np.array(imagem)
 
@@ -57,11 +57,11 @@ rng = np.random.default_rng(42)
 
 pesos, posicoes = treino_som(
     pixels=pixels,
-    grid_linhas=4,
-    grid_colunas=4,
+    grid_linhas=16,
+    grid_colunas=16,
     learning_rate_inicial=0.5,
-    sigma_inicial=2.0,
-    iteracoes=10000,
+    sigma_inicial=8.0,
+    iteracoes=40000,
     rng=rng
 )
 
@@ -148,9 +148,11 @@ imagem_reconstruida = (
         imagem_reconstruida * 255
     ).clip(0, 255).astype(np.uint8)
 
-Image.fromarray(imagem_reconstruida)
+img_pil = Image.fromarray(imagem_reconstruida)
 
-Image.fromarray(imagem_reconstruida).show()
+img_pil.save("imagem_reconstruida.jpg")
+
+img_pil.show()
 
 cores_unicas = np.unique(
     imagem_reconstruida.reshape(-1, 3),
