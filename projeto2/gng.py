@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image
 
-imagem = Image.open("imagens/floresta.jpg").convert("RGB")
+imagem = Image.open("imagens/familia.jpg").convert("RGB")
 
 imagem_array = np.array(imagem)
 
