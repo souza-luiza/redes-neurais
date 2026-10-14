@@ -4,3 +4,4 @@ Repositório destinado aos projetos desenvolvidos durante a disciplina de Redes 
 
 ## Projetos
 - `/projeto1` — Regressão com MLP e Estudo de Ablação
+- `/projeto2` — Compressão de cores com redes SOM e GNG
