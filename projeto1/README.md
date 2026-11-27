@@ -1,6 +1,6 @@
-# Projeto 1 — Regressão com MLP e Estudo de Ablação
+# Projeto 1 - Regressão com MLP e Estudo de Ablação
 
-Projeto desenvolvido na disciplina de Redes Neurais com o objetivo de avaliar uma rede **Multi-Layer Perceptron (MLP)** em uma tarefa de regressão e analisar o efeito de diferentes técnicas de otimização e regularização.
+Projeto com o objetivo de avaliar uma rede **Multi-Layer Perceptron (MLP)** em uma tarefa de regressão e analisar o efeito de diferentes técnicas de otimização e regularização.
 
 ## Estrutura
 
